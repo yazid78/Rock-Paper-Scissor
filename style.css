@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(214, 47%, 23%);
+}
+.containerTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid gray;
+}
+.tableScore {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+}
+.containerGame {
+  position: absolute;
+  left: 38%;
+  top: 400px;
+}
+.paper {
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 300px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px hsl(230, 89%, 62%);
+  border: 6px solid hsl(230, 89%, 65%);
+}
+.paper img {
+  border-radius: 200px;
+  position: relative;
+  left: -3px;
+  top: -25px;
+  width: 3rem;
+  height: 6rem;
+  object-fit: contain;
+}
+.paper:hover {
+  box-shadow: 0 8px hsl(230, 89%, 62%);
+  transform: scale(1.2);
+  transition: ease-in-out 0.5s;
+}
+.scissor {
+  position: absolute;
+  top: -35px;
+  left: 230px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 300px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px hsl(39, 89%, 49%);
+  border: 6px solid hsl(40, 84%, 53%);
+}
+.scissor img {
+  border-radius: 200px;
+  position: relative;
+  left: -3px;
+  top: -25px;
+  width: 3rem;
+  height: 6rem;
+  object-fit: contain;
+}
+.scissor:hover {
+  box-shadow: 0 6px hsl(39, 89%, 49%);
+  transform: scale(1.2);
+  transition: ease-in-out 0.5s;
+}
+.rock {
+  position: absolute;
+  top: 180px;
+  left: 100px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 300px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px hsl(349, 70%, 56%);
+  border: 6px solid hsl(349, 71%, 52%);
+}
+.rock img {
+  border-radius: 200px;
+  position: relative;
+  left: -3px;
+  top: -25px;
+  width: 3rem;
+  height: 6rem;
+  object-fit: contain;
+}
+.rock:hover {
+  box-shadow: 0 6px hsl(349, 70%, 56%);
+  transform: scale(1.2);
+  transition: ease-in-out 0.5s;
+}
+.displaynone {
+  display: none;
+}
+.imagePlayer1 {
+  position: absolute;
+  top: -35px;
+  left: -150px;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 300px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px hsl(39, 89%, 49%);
+  border: 6px solid hsl(40, 84%, 53%);
+  background-color: white;
+  object-fit: contain;
+}
+.imagePlayer2 {
+  position: absolute;
+  top: -35px;
+  left: 300px;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 300px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px hsl(349, 70%, 56%);
+  border: 6px solid hsl(349, 71%, 52%);
+  background-color: white;
+  object-fit: contain;
+}
+.restart {
+  position: absolute;
+  left: 80px;
+  top: 50px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 7px;
+  background-color: #eee;
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-weight: 700;
+  border: none;
+}
+.youpicked {
+  position: absolute;
+  top: -100px;
+  left: -140px;
+  color: white;
+}
+.thehousepicked {
+  position: absolute;
+  top: -100px;
+  left: 280px;
+  color: white;
+  width: 300px;
+}
+.message {
+  color: white;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.rules {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.rulesImg {
+  border-radius: 15px;
+  position: relative;
+  display: none;
+}
+.rules span {
+  position: relative;
+  left: 430px;
+  top: 20px;
+  z-index: 1;
+  height: 50px;
+  cursor: pointer;
+}
+.rulesBtn {
+  margin-top: 200px;
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  background: none;
+  width: 128px;
+  height: 40px;
+  margin: auto;
+  border: 1px solid hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.rulesBtn:hover {
+  background-color: white;
+  color: black;
+}
+.containerRules {
+  margin-right: 100px;
+  text-align: right;
+  margin-top: 100px;
+  position: absolute;
+  top: 300px;
+}
