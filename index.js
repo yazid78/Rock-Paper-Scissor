@@ -155,12 +155,16 @@ function showRestartButton() {
   restartBtn.addEventListener("click", resetGame);
   Game.appendChild(restartBtn);
 }
+
 const btnRules = document.querySelector(".rulesBtn");
 const rulesImg = document.querySelector(".rulesImg");
 const close = document.querySelector(".close");
+const closeModal = document.getElementById("closeModal");
 const containerRules = document.querySelector(".rules");
+
 btnRules.addEventListener("click", () => {
   containerRules.style.display = "flex";
+  closeModal.style.display = "block";
   rulesImg.style.display = "block";
 });
 close.addEventListener("click", () => {
